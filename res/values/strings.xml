@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HelpMeTro</string>
+    
+    <string name="title_text">HelpMeTro</string>
+    
+    <string name="subtitle_text">HelpMeTro</string>
+    
+    <string name="station_list_label_select">scegliere una fermata</string>
+    
+    <string name="title_station_list_label_select">fermata</string>
+    
+    <string name="range_station_label_distance">scegliere distanza</string>
+    
+    <string name="title_range_station_label_distance">\t\tdistanza\t\t\t</string>
+    
+    <string name="title_mygeo_label_g30">avvia ricerca</string>
+    
+	<string name="check_search_button">seleziona una Linea della Metro</string>
+	
+	<string name="search_button">avvia ricerca</string>
+	
+	<string name="menu_exit">Termina programma</string>
+	
+	<string name="menu_exit_title">Termina programma</string>
+	
+	<string name="menu_exit_summary">Si vuole uscire dal programma?</string>
+	
+	<string name="ui_si">Si</string>
+	
+	<string name="ui_no">No</string>
+	
+	<string name="ui_exit_anyway">Uscita</string>
+	
+	<string name="press_hard_key">Si vuole uscire dal programma?\nSi raccomanda di usare\nil tasto Menù</string>
+	
+    <string name="wifi">Wifi</string>
+    
+    <string name="tre_g">Mobile 3G</string>
+    
+    <string name="no_net">No Rete</string>
+	
+    <string name="ERROR">__ERROR__</string>
+    
+	<string name="WARNIG">__WARING__</string>
+	
+	<string name="DEBUG">__DEBUG__</string>
+	
+	<string name="INFO">__INFO__</string>
+	
+	<string name="LOCK">locking lock</string>
+	
+	<string name="HelpMeTroActivity">HelpMeTroActivity</string>
+	
+	<string name="idService">idService</string>
+	
+	<string name="ServiceHandler">ServiceHandler</string>
+	
+	<string name="searchPropertiesButton">searchPropertiesButton</string>
+	
+	<string name="prog_conn">prog_conn</string>
+	
+	<string name="OK">Conferma</string>
+
+	<string name="mts">metri</string>
+	
+	<string name="Km">chilometro</string>
+	
+	<string name="Kms">chilometri</string>
+	
+	<string name="pre_comment">descrizione:</string>
+	
+	<string name="b_ok">ok</string>
+	
+	<string name="b_close">chiudi</string>
+	
+	<string name="vx_not_valid">oggetto non valido</string>
+	
+	<string name="vx_not_ok">riconoscimento fallito</string>
+	
+	<string name="vx_error">errore</string>
+	
+	<string name="vx_no_obj">nessun oggetto</string>
+	
+	<string name="extra_language">it-IT</string>
+	
+	<string name="m_no_starage">spiacenti!,\n\n impossibile salvare le informazioni, nessun memoria montata</string>
+	
+	<string name="position_on">attivare l\'accesso alla posizione</string>
+	
+	<string name="del_marker" formatted="false">vuoi cancellare \'%1$s\'?</string>
+	
+	<string name="marker">marker</string>
+	
+	<string name="no_service">servizio momentaneamente non disponibile</string>
+    
+    <string name="msg_text_station_list">indicare la stazione</string>
+    
+    <string name="msg_text_range_station">indicare l\'area di ricerca</string>
+    
+    <string name="rec_lable_station_list">dire l\'la stazione desiderata</string>
+    
+	<string name="rec_range_station">dire la distanza per localizzare</string>
+	
+	<string name="metroA">Metro Linea A</string>
+	
+    <string name="metroA_on">Metro Linea A</string>
+    
+    <string name="metroA_off">Metro Linea A</string>
+    
+    <string name="check_metroA_on">Metro Linea A\nselected</string>
+    
+    <string name="metroB">Metro Linea B</string>
+    
+    <string name="metroB_on">Metro Linea B</string>
+    
+    <string name="metroB_off">Metro Linea B</string>
+    
+    <string name="check_metroB_on">Metro Linea B\nselected</string>
+    
+    <string name="action_settings">Settings</string>
+    
+    <string name="snipped_my_pos">mia posizione</string>
+    
+    <string name="elab">elaborazione in corso</string>
+    
+    <string name="end_elab">fine elaborazione</string>
+    
+    <string name="tracing">inizio tracciamento</string>
+    
+    <string name="metro_in">in arrivo tra :</string>
+    
+    <string name="minute">minuti</string>
+    
+    <string name="seconds">secondi</string>
+    
+     <!-- SERVICE -->
+    
+    <string name="incoming_time">incoming_time</string>
+    <string name="regular_time">regular_time</string>
+    <string name="unknown_time">unknown_time</string>
+    <string name="immadiate_time">immadiate_time</string>
+    
+    
+	
+</resources>

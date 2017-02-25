@@ -1,0 +1,140 @@
+ <it.wlp.android.widgets.TitleBar
+            android:id="@id/titleBar"
+            style="@style/TitleBar_st"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+        <SeekBar
+        android:id="@id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/xValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/curentValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="false" />
+        
+        
+        
+        
+    	 setDrawable(v.getBackground());
+    	 v.setBackgroundDrawable(new ColorDrawable(0xff0000a0) );
+    	 
+    	 //prima iterazione
+    	 if(getView() != null)
+    		 	getView().setBackgroundDrawable(getDrawable());
+    	 
+    	 setView(v);
+    	 
+    	 
+    	 
+    	 LinearLayout hiddenLinearLayout = (LinearLayout)findViewById(R.id.hidden_LinearLayout);
+                    	LinearLayout inner_lL = new LinearLayout(MyGeoActivity.this);
+                    	inner_lL.setOrientation(LinearLayout.HORIZONTAL);
+                    	LinearLayout.LayoutParams vp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+                    	inner_lL.setLayoutParams(vp);
+                    	
+                    	ImageView imageView = new ImageView(MyGeoActivity.this);
+                    	imageView.setLayoutParams(vp);        
+                    	imageView.setImageResource(((G30Bean)msg.obj).getMarker());        
+                    	inner_lL.addView(imageView); 
+                    	
+        				TextView textView = new TextView(MyGeoActivity.this);
+        				inner_lL.setId(((G30Bean)msg.obj).getObjectId());
+        				textView.setTypeface(null, Typeface.BOLD_ITALIC);
+        				textView.setTextColor(Color.CYAN);
+        				textView.setTextSize(TypedValue.COMPLEX_UNIT_SP,(float)23.0);
+        				textView.setText((CharSequence)((G30Bean)msg.obj).getTitle());
+        				inner_lL.addView(textView); 
+        				
+        				hiddenLinearLayout.addView(inner_lL);
+        				hiddenLinearLayout.setVisibility(hiddenLinearLayout.VISIBLE);
+        				
+        				
+        				
+        				
+        				
+        				
+        				
+        				
+        				
+        				
+        				
+        				
+        				
+        				
+				public void handleMessage(Message msg)
+				{
+						boolean toClose = true;
+			
+						ContainerG30Bean containerG30Bean = NotifyBean.getElementsC_G30Bean(UTIL_GEO.NB_Stations);
+			
+             			try 
+                		{	
+                			Iterator<G30Bean> iterG30Bean = containerG30Bean.g30Beans.iterator();
+                			
+                			while (iterG30Bean.hasNext()) 
+                			{
+                				G30Bean g30Bean = iterG30Bean.next();
+                				
+                				if (g30Bean.getType().equals(UTIL_GEO.METRO_A))
+                				{
+                					if(tubeBeans.size() == 0)
+                					{	
+                						TubeBean firstTubeBean  = new TubeBean(UtilMarkerOptions.addMarker(mMap
+                														, g30Bean)
+                														, true 
+                														, g30Bean.getTitle() ); 
+                						tubeBeans.add(firstTubeBean);
+                						toClose = false;
+                					}
+                					else
+                					{
+                						for (TubeBean tubeBean : tubeBeans)
+                						{
+                							if(tubeBean.getTitle().equals(g30Bean.getTitle()))
+                							{
+                								if(tubeBean.isActivated())
+                								{
+                									tubeBean.getMarker().remove();
+                									tubeBean.off();
+                									
+                									if(iterG30Bean.hasNext())
+                									{
+                										G30Bean nextG30Bean = iterG30Bean.next();
+                										
+                										TubeBean firstTubeBean  = new TubeBean(UtilMarkerOptions.addMarker(mMap
+                											, nextG30Bean)
+                											, true 
+                											, nextG30Bean.getTitle() );
+                									
+                										tubeBeans.add(firstTubeBean);
+                										toClose = false;
+                									}
+                								}
+                							}
+                						}
+                					}
+                				}
+                			}
+                			if(toClose)
+                        	{
+                        		Message startMessage = new Message();
+                        		startMessage.arg1 = SERVICES.STOP;
+                        		serviceHandler.handleMessage(startMessage, A_To_B_Service);
+                        	}
+                		} 
+                		catch (Exception e) 
+                		{
+                			Log.e(UTIL_GEO.HELPMETRO, "GenericRunnerMetro ERROR :" ,  e);
+                		}	
+                  }
+			
+    

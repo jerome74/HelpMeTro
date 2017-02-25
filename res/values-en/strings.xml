@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<resources>
+    
+    <string name="app_name">HelpMeTro</string>
+    
+    <string name="title_text">HelpMeTro</string>
+    
+    <string name="subtitle_text">HelpMeTro</string>
+    
+    <string name="station_list_label_select">select a station</string>
+    
+    <string name="title_station_list_label_select">station</string>
+    
+    <string name="range_station_label_distance">select a distance</string>
+    
+    <string name="title_range_station_label_distance">\t\tdistance\t\t\t</string>
+    
+    <string name="title_mygeo_label_g30">start research</string>
+    
+	<string name="check_search_button">select a Tube Line</string>
+	
+	<string name="search_button">start research</string>
+	
+	<string name="menu_exit">Exit program</string>
+	
+	<string name="menu_exit_title">Exit program</string>
+	
+	<string name="menu_exit_summary">Do you want exit?</string>
+	
+	<string name="ui_si">Yes</string>
+	
+	<string name="ui_no">No</string>
+	
+	<string name="ui_exit_anyway">Exit</string>
+	
+	<string name="press_hard_key">Do you want exit?\nSuggest to you use\nthe Menù button</string>
+	
+    <string name="wifi">Wifi</string>
+    
+    <string name="tre_g">Mobile 3G</string>
+    
+    <string name="no_net">No Net</string>
+	
+    <string name="ERROR">__ERROR__</string>
+    
+	<string name="WARNIG">__WARING__</string>
+	
+	<string name="DEBUG">__DEBUG__</string>
+	
+	<string name="INFO">__INFO__</string>
+	
+	<string name="LOCK">locking lock</string>
+	
+	<string name="HelpMeTroActivity">HelpMeTroActivity</string>
+	
+	<string name="idService">idService</string>
+	
+	<string name="ServiceHandler">ServiceHandler</string>
+	
+	<string name="searchPropertiesButton">searchPropertiesButton</string>
+	
+	<string name="prog_conn">prog_conn</string>
+	
+	<string name="OK">Confirm</string>
+
+	<string name="mts">mts</string>
+	
+	<string name="Km">km</string>
+	
+	<string name="Kms">Kms</string>
+	
+	<string name="pre_comment_geo">comment:</string>
+	
+	<string name="b_ok">ok</string>
+	
+	<string name="b_close">close</string>
+	
+	<string name="vx_not_valid">element not valid</string>
+	
+	<string name="vx_not_ok">identification failed</string>
+	
+	<string name="vx_error">error</string>
+	
+	<string name="vx_no_obj">any element</string>
+	
+	<string name="extra_language">en-EN</string>
+	
+	<string name="m_no_starage">Sorry!,\n\n impossible to save the information, any storage mounted</string>
+	
+	<string name="no_metro">Please!, \n selected a tube</string>
+	
+	<string name="no_station">Please!, \n station not correct</string>
+	
+	<string name="position_on">active l\'the localization</string>
+	
+	<string name="del_marker" formatted="false">Delete \'%1$s\'?</string>
+	
+	<string name="marker">marker</string>
+	
+	<string name="no_service">out of service</string>
+	
+	<string name="no_service_transit">out of service transit</string>
+    
+    <string name="msg_text_station_list">select station</string>
+    
+    <string name="msg_text_range_station">select range</string>
+    
+    <string name="rec_lable_station_list">say station\'s name</string>
+    
+	<string name="rec_range_station">say range to locate</string>
+	
+    <string name="metroA_on">Metro Line A selected</string>
+    
+    <string name="metroA_off">Metro Line A</string>
+    
+    <string name="metroB_on">Metro Line B selected</string>
+    
+    <string name="metroB_off">Metro Line B</string>
+    
+    <string name="action_settings">Settings</string>
+    
+    <string name="snipped_my_pos">my position</string>
+     
+    <string name="elab">waiting for elab</string>
+     
+    <string name="end_elab">end elaboration</string>
+      
+    <string name="tracing">start tracing</string>
+      
+    <string name="metro_in">arrive in :</string>
+    
+   	<string name="minute">minute</string>
+   	
+   	<string name="seconds">seconds</string>
+     
+      <!-- SERVICE -->
+    
+    <string name="incoming_time">incoming_time</string>
+    <string name="regular_time">regular_time</string>
+    <string name="unknown_time">unknown_time</string>
+    <string name="immadiate_time">immadiate_time</string>
+    
+</resources>

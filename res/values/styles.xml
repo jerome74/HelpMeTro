@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="G30_TitleBar">
+        <item name="android:textAppearance">@style/G30_TitleBarTextAppearance</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">5.0sp</item>
+        <item name="android:paddingTop">5.0sp</item>
+        <item name="android:paddingRight">5.0sp</item>
+        <item name="android:paddingBottom">5.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_TitleBarTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="G30_Form_ScrollView">
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="G30_Loan_Calculator_Form" parent="@style/G30_Form">
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="G30_Form">
+        <item name="android:background">@drawable/form_background</item>
+    </style>
+    <style name="G30_Form_Row">
+        <item name="android:background">@drawable/form_row_background</item>
+    </style>
+    <style name="G30_MapButton_Form_Row" parent="@style/G30_Form_Row">
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+    </style>
+    <style name="G30_Form_Row_Padded" parent="@style/G30_Form_Row">
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+    </style>
+    <style name="G30_Form_Button_Container">
+        <item name="android:background">@drawable/bg_greenbtns</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Form_Button">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/bg_greenbtn_single</item>
+        <item name="android:paddingLeft">4.0sp</item>
+        <item name="android:paddingTop">10.0sp</item>
+        <item name="android:paddingRight">4.0sp</item>
+        <item name="android:paddingBottom">10.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="G30_Form_ProgressBar_Container">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/bg_greenbtn_single</item>
+        <item name="android:paddingLeft">4.0sp</item>
+        <item name="android:paddingTop">10.0sp</item>
+        <item name="android:paddingRight">4.0sp</item>
+        <item name="android:paddingBottom">10.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Form_ProgressBar">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">17.0sp</item>
+        <item name="android:layout_height">17.0sp</item>
+    </style>
+    <style name="G30_Form_Button_Left" parent="@style/G30_Form_Button">
+        <item name="android:background">@drawable/bg_greenbtn_left</item>
+    </style>
+    <style name="G30_Form_Button_Right" parent="@style/G30_Form_Button">
+        <item name="android:background">@drawable/bg_greenbtn_right</item>
+    </style>
+    <style name="G30_Form_Button_Center" parent="@style/G30_Form_Button">
+        <item name="android:background">@drawable/bg_greenbtn_center</item>
+    </style>
+    <style name="G30_Results_List">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="G30_Loan_Calculator_Results_List">
+        <item name="android:background">@drawable/loan_results_background</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="G30_Legal_Notice" parent="@style/G30_Loan_Calculator_Results_List">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+    </style>
+    <style name="G30_Results_List_Row">
+        <item name="android:background">@drawable/bg_results_row</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Loan_Calculator_Results_List_Header">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/loan_results_header_background</item>
+    </style>
+    <style name="G30_Loan_Calculator_Results_List_Header_Row_TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="G30_Loan_Calculator_Results_List_Row">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Loan_Calculator_Results_List_Row_TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Results_List_Footer">
+        <item name="android:background">@drawable/bg_greenbtns</item>
+    </style>
+    <style name="G30_Results_List_Header">
+        <item name="android:background">@drawable/bg_list_header</item>
+    </style>
+    <style name="G30_Form_Label_TextAppearance">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="G30_Form_TextAppearance">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff1aad3b</item>
+    </style>
+     <style name="G30_Form_TextAppearance_black">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="G30_Form_Label">
+        <item name="android:textAppearance">@style/G30_Form_Label_TextAppearance</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_About_Text">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:linksClickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10.0dip</item>
+    </style>
+    <style name="G30_Form_Spinner">
+        <item name="android:textAppearance">@style/G30_Form_SpinnerText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/spinner_arrow_selector</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="G30_Form_SpinnerText" parent="@style/G30_Form_TextAppearance">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Form_EditText">
+        <item name="android:textAppearance">@style/G30_Form_TextAppearance</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="G30_Form_Checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textAppearance">@style/G30_Form_TextAppearance</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff1aad3b</item>
+    </style>
+    <style name="G30_Form_SeekBar">
+        <item name="android:textAppearance">@style/G30_Form_TextAppearance</item>
+    </style>
+    <style name="G30_Form_Radio" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textAppearance">@style/G30_Form_TextAppearance</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff1aad3b</item>
+    </style>
+    <style name="G30_PreferencesTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+    <style name="G30_Empty_List_Message">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/empty_list_message_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_FormInnerButton_Left">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:background">@drawable/bg_blackbtn_left</item>
+    </style>
+    <style name="G30_FormInnerButton_Center">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:background">@drawable/bg_blackbtn_center</item>
+    </style>
+    <style name="G30_FormInnerButton_Right">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:background">@drawable/bg_blackbtn_right</item>
+    </style>
+    <style name="G30_FormInnerButton">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:background">@drawable/bg_blackbtn_single</item>
+    </style>
+    <style name="G30_Form_Map_Button" parent="@style/G30_FormInnerButton" />
+    <style name="G30_SortBy_Spinner" parent="@style/G30_Form_Button_Center">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="G30_Save_Search_Button" parent="@style/G30_Form_Button_Left">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="G30_SortBy_SpinnerText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Properties_List_Row_Text">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Properties_List_Row_Score_Text" parent="@style/G30_Properties_List_Row_Text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff1aad3b</item>
+    </style>
+    <style name="G30_Property_Detail_Header">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_detail_header</item>
+    </style>
+    <style name="G30_Property_Detail_Info">
+        <item name="android:background">@drawable/bg_results_row</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Property_Detail_Info_Text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">14.0sp</item>
+    </style>
+    <style name="G30_FormInnerButton_Small">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:background">@drawable/bg_blackbtn_single_small</item>
+    </style>
+    <style name="G30_Property_Detail_Notes" parent="@style/G30_Property_Detail_Info">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="G30_Property_Detail_Notes_Label_Text">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Property_Detail_Notes_Text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Favourite_CheckBox">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">25.0dip</item>
+        <item name="android:layout_height">25.0dip</item>
+        <item name="android:button">@drawable/favourite_checkbox</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="G30_Favourite_Image">
+        <item name="android:layout_width">25.0dip</item>
+        <item name="android:layout_height">25.0dip</item>
+        <item name="android:src">@drawable/preferiti_active</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="G30_SortDesc_CheckBox">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">40.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/sortdesc_checkbox</item>
+    </style>
+    <style name="G30_Property_Detail_Agency">
+        <item name="android:background">@drawable/bg_agency_detail</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+    </style>
+    <style name="G30_Property_Detail_Agency_Text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_Agency_Detail_Header" parent="@style/G30_Property_Detail_Header" />
+    <style name="G30_Agency_Detail">
+        <item name="android:background">@drawable/bg_agency_detail</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+    </style>
+    <style name="G30_Agency_Detail_Text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="G30_list_divider">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">1dip</item>
+		<item name="android:layout_marginTop">4dip</item>
+		<item name="android:layout_marginBottom">4dip</item>
+	</style>
+    <style name="G30_list_divider_bl" parent="G30_list_divider">
+		<item name="android:background">@drawable/list_divider_bl</item>
+	</style>
+    <style name="Theme.G30" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/background</item>
+    </style>
+</resources>

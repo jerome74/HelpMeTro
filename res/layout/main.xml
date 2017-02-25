@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+     <TextView
+        style="@style/G30_TitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_text" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/G30_Form"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" >
+
+                <ToggleButton
+                    style="@style/G30_Form_Button_Left"
+                    android:id="@+id/metroAButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/metroA_off"
+                    android:textOff="@string/metroA_off"
+                    android:textOn="@string/metroA_on" />
+
+                <ToggleButton
+                    style="@style/G30_Form_Button_Right"
+                    android:id="@+id/metroBButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/metroB_off"
+                    android:textOff="@string/metroB_off"
+                    android:textOn="@string/metroB_on" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+				<View
+                   style="@style/G30_list_divider_bl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/voice_station_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/voiceset_1"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        style="@style/G30_Form_TextAppearance_black"
+                        android:id="@+id/text_station_list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/msg_text_station_list" />
+
+                </LinearLayout>
+
+                <View
+                   style="@style/G30_list_divider_bl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+              <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    >
+
+                    <ImageView
+                        android:id="@+id/voice_range_station"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/voiceset_1"
+                        android:layout_gravity="center_vertical" />
+                    
+                    <TextView
+                        style="@style/G30_Form_TextAppearance_black"
+                        android:id="@+id/text_range_station"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/msg_text_range_station" />
+                    
+                </LinearLayout>
+                
+              	 <View
+                  	 	style="@style/G30_list_divider_bl"
+                    	android:layout_width="fill_parent"
+                    	android:layout_height="1sp" />
+              
+                 <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" 
+                    android:background="@drawable/mappametro" 
+                    />
+                
+
+                <TextView
+                    android:id="@+id/idle_text_range_station"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:visibility="gone" />
+                <View
+                   style="@style/G30_list_divider_bl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hidden_LinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- The buttons at the bottom of the screen. -->
+    
+    <TextView
+        style="@style/G30_TitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        style="@style/G30_Form"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                style="@style/G30_Form_ProgressBar"
+                android:id="@+id/prog_conn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <TextView
+                style="@style/G30_Form_Button_Center"
+                android:id="@+id/searchPropertiesButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search_button"
+                android:gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
