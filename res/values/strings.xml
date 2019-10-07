@@ -29,6 +29,8 @@
 	<string name="ui_si">Si</string>
 	
 	<string name="ui_no">No</string>
+
+	<string name="pre_comment_geo">comment:</string>
 	
 	<string name="ui_exit_anyway">Uscita</string>
 	
@@ -140,7 +142,10 @@
     <string name="regular_time">regular_time</string>
     <string name="unknown_time">unknown_time</string>
     <string name="immadiate_time">immadiate_time</string>
-    
+
+	<string name="no_metro">selezionare una metro</string>
+	<string name="no_station">stazione non corretta</string>
+	<string name="no_service_transit">servizio transit momentaneamente non disponibile</string>
     
 	
 </resources>

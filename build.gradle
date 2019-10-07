@@ -1,25 +1,38 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
 buildscript {
+
     repositories {
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.android.tools.build:gradle:3.1.0'
+        classpath 'com.google.gms:google-services:4.0.2'
+
     }
 }
-apply plugin: 'com.android.application'
 
 dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
-}
-
-dependencies {
-    //compile 'com.google.android.gms:play-services-maps:9.0.0'
-    compile 'com.google.android.gms:play-services:+'
+    implementation fileTree(include: '*.jar', dir: 'libs')
+    implementation 'com.google.android.gms:play-services-base:7.3.0'
+    implementation 'com.google.android.gms:play-services-location:7.3.0'
+    implementation 'com.google.android.gms:play-services-maps:9.0.0'
+    implementation 'com.google.android.gms:play-services:+'
+    implementation 'com.google.firebase:firebase-core:12.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
 }
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "21.0.1"
+
+    defaultConfig
+     {
+         multiDexEnabled true
+     }
+
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     useLibrary 'org.apache.http.legacy'
 
@@ -35,7 +48,7 @@ android {
         }
 
         // Move the tests to tests/java, tests/res, etc...
-        instrumentTest.setRoot('tests')
+        androidTest.setRoot('tests')
 
         // Move the build types to build-types/<type>
         // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
@@ -46,4 +59,8 @@ android {
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
     }
+}
+
+repositories {
+    google()
 }

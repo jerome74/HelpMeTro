@@ -83,6 +83,8 @@
 	<string name="vx_no_obj">nessun oggetto</string>
 	
 	<string name="extra_language">it-IT</string>
+
+	<string name="pre_comment_geo">comment:</string>
 	
 	<string name="m_no_starage">spiacenti!,\n\n impossibile salvare le informazioni, nessun memoria montata</string>
 	
